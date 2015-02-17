@@ -30,11 +30,13 @@ def readTemp():
 		writer = csv.writer(f, delimiter=',', lineterminator='\n')
 		data = [currentDate, currentTime, tempC, tempF]
 		writer.writerow(data)"""
-		
-	con = mydb.connect('temperature.db')
+
+	con = mydb.connect('/home/pi/embedded-linux/ELSpring2015/misc/temperature.db')
 	cur = con.cursor()
-	cur.execute("insert into tempData values(currentTime, tempC, tempF)");
-		
+	cur.execute('CREATE TABLE IF NOT EXISTS tempData(currentTime text, tempC real, tempF real)')
+	cur.execute("INSERT INTO tempData VALUES (?, ?, ?)", (currentTime, tempC, tempF))
+	con.commit()
+	
 	return "Current temperature is: " + str(tempF) + "\nTemperature logged"
 	
 print readTemp()
