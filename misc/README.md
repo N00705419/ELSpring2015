@@ -1,6 +1,6 @@
 # Miscellaneous Files
 
-Franz Vezuli - N00705419
+Franz Vezuli - N00705419 - http://www.franzvezuli.com/rpi/
 
 This repository will contain files that aren't pictures or code.
 
