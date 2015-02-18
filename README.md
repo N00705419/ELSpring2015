@@ -1,6 +1,6 @@
 # Embedded Linux
 
-Franz Vezuli - N00705419
+Franz Vezuli - N00705419 - http://www.franzvezuli.com/rpi/
 
 This repository will contain everything that has to do with the **Embedded Linux** class.
 
