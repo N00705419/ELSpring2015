@@ -7,6 +7,9 @@ import os
 import time
 import sqlite3 as mydb
 import sys
+import mandrill
+
+"""mandrill_client = mandrill.Mandrill('b2rZGybdNFSbHuW_UWdnfg')"""
  
 """Need this to write to CSV File
    import csv """
